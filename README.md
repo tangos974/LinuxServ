@@ -7,8 +7,8 @@ DONE:
 - Install ubuntu server on old macbook
 
 - Setup secure SSH over LAN (https://en.wikipedia.org/wiki/Local_area_network) from desktop and laptop into server:
-        - Disable direct root login (1.3)
-        - Use ssh keys (1.2)
+        -  Disable direct root login (1.3)
+        -  Use ssh keys (1.2)
 
 
 
