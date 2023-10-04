@@ -10,14 +10,16 @@ DONE:
         -  Disable direct root login (1.3)
         -  Use ssh keys (1.2)
 
+- Make it so closing the lid of the macbook shuts off the screen but not the computer
+        https://www.mkeesey.me/posts/macbook-server/
 
 
 TODO:
 
-- Setup Firewall
+- Learn about Ansible PLaybooks and use them
+  https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html
 
-- Make it so closing the lid of the macbook shuts off the screen but not the computer
-        https://www.mkeesey.me/posts/macbook-server/
+- Setup Firewall
 
 - Auto updates?
 
