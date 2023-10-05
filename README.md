@@ -24,15 +24,12 @@ DONE:
         - Get external IP address (3.4)
 
         - Set Up Port Forwarding (3.5, 3.6)
-  
-        - Setup Firewall for distance ssh, client side
-
-        - Setup Firewall for distance ssh, server side (3.7, 3.8, 1.4, 3.9, 3.10)
-
-
 
 TODO:
+- Setup Firewall for distance ssh, client side
 
+- Setup Firewall for distance ssh, server side (3.7, 3.8, 1.4, 3.9, 3.10)
+  
 - Setup TCP Wrapper
 
 - Learn about Ansible PLaybooks and use them (2.2)
