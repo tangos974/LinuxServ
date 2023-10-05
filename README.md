@@ -15,7 +15,7 @@ DONE:
   
 - Set static IP address (3.1, 3.2, 3.3)
 
-- Install Web server software (Apache)
+- Install Web server software (2.3)
 
 TODO:
 
@@ -28,6 +28,13 @@ TODO:
 
 - Auto updates?
 
+- Set Up Port Forwarding
+
+- Enable HTTPS
+
+- Create automatic backup routines
+
+- Setup easy Monitoring for server stats
 
 - Setup NAS over LAN (Samba?)
 
@@ -43,6 +50,7 @@ Sources:
 - 2. Linux Sysadmin:
              -  AutoUpdates + physicalconstraints : https://www.mkeesey.me/posts/macbook-server/
              -  Ansible: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html
+             -  Install & configure apache: https://ubuntu.com/tutorials/install-and-configure-apache#1-overview
         
 - 3. Networking:
              -  Example (deprecated) https://linuxopsys.com/topics/configure-static-ip-address-on-ubuntu-20-04
