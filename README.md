@@ -22,8 +22,7 @@ TODO:
 - Auto updates?
 
 - Set static IP address (Learn about linux interfaces)
-        https://archive.org/details/unix-network-programming/Unix%20Network%20Programming%20Vol%201%20W.%20Richard%20Stevens/page/n15/mode/2up?view=theater
-        https://www.youtube.com/watch?v=EnAZB8GI97c
+        https://linuxopsys.com/topics/configure-static-ip-address-on-ubuntu-20-04
 
 - Setup NAS over LAN (Samba?)
 
