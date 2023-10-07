@@ -31,6 +31,7 @@ DONE:
 
 TODO:
 
+- Setup Django! (4.1)
   
 - Setup TCP Wrapper
 
@@ -74,3 +75,6 @@ Sources:
              -  UFW Port Forwarding: https://learnubuntu.com/allow-port-firewall/
              -  Ssh over LAN and WAN: https://www.techrepublic.com/article/how-to-allow-ssh-connections-from-lan-and-wan-on-different-ports/
              -  Debugging WAN: https://www.linuxquestions.org/questions/linux-server-73/ssh-not-working-on-wan-851977/
+
+- 4. Backend Dev:
+             - Django doc: https://docs.djangoproject.com/en/4.2/intro/tutorial01/
