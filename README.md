@@ -18,7 +18,11 @@ DONE:
 
 
 - Install Web server software (2.3)
+
+- Setup Firewall for distance ssh, client side (not needed)
   
+- Setup Firewall for distance ssh, server side (3.7, 3.8, 1.4, 3.9, 3.10)
+
 - SSh over web
   
         - Get external IP address (3.4)
@@ -26,9 +30,7 @@ DONE:
         - Set Up Port Forwarding (3.5, 3.6)
 
 TODO:
-- Setup Firewall for distance ssh, client side
 
-- Setup Firewall for distance ssh, server side (3.7, 3.8, 1.4, 3.9, 3.10)
   
 - Setup TCP Wrapper
 
