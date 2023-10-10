@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ["192.168.1.37"]
 # Application definition
 
 INSTALLED_APPS = [
+    "pages.apps.PagesConfig",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
