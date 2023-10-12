@@ -31,7 +31,7 @@ DONE:
 
 TODO:
 
-- Setup Django! (4.1, 4.2)
+- Setup Django! (4.1, 4.2, 4.3)
   
 - Setup TCP Wrapper
 
@@ -78,5 +78,5 @@ Sources:
 
 - 4. Backend Dev:
              - Django doc: https://docs.djangoproject.com/en/4.2/intro/tutorial01/
-             - Django dir structure advice: https://stackoverflow.com/questions/22841764/best-practice-for-django-project-working-directory-structure
-	     - https://realpython.com/get-started-with-django-1/ 
+             - Django dir structure advice: https://stackoverflow.com/questions/22841764/best-practice-for-django-project-working-directory-structure Completed!
+	     - https://realpython.com/get-started-with-django-1/ Completed!
