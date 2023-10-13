@@ -35,7 +35,7 @@ TODO:
 	- find plan sketching software? -> Wireframe! (5.1, 5.2)
 	- Learn to use wireframe
 
-- Setup Django! (4.1, 4.2, 4.3, 4.4)
+- Setup Django! (4.1, 4.2, 4.3, 4.4, 4.7)
   	basic homepage: 4.6
   	blog: 4.5
   
@@ -89,6 +89,8 @@ Sources:
      	     - Blog post of dev who built portfolio in Django: https://dev.to/randysteele/how-i-built-my-portfolio-site-in-django-part-1-53nk
      	     - Udemy course for django 2.2: https://www.udemy.com/course/try-django-2-2-python-web-development/learn/lecture/14258630#overview
      	     - Simple one page app: https://www.pythonstacks.com/blog/post/create-single-page-application/
+     	     - book: https://djangoforbeginners.com/
+     	     - reddit django learning recommandations: https://www.reddit.com/r/django/comments/m5qtdf/my_recommendation_to_learn_django/
 
 - 5. Frontend dev/web design:
   	     - Guide for mapping out future site: https://www.freecodecamp.org/news/what-is-a-wireframe-ux-design-tutorial-website/
