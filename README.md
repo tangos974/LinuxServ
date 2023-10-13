@@ -38,6 +38,7 @@ TODO:
 - Setup Django! (4.1, 4.2, 4.3, 4.4, 4.7)
   	basic homepage: 4.6
   	blog: 4.5
+        first deployment: 4.9, 4.7 pages 61 - 64
   
 - Setup TCP Wrapper
 
@@ -91,6 +92,7 @@ Sources:
      	     - Simple one page app: https://www.pythonstacks.com/blog/post/create-single-page-application/
      	     - book: https://djangoforbeginners.com/
      	     - reddit django learning recommandations: https://www.reddit.com/r/django/comments/m5qtdf/my_recommendation_to_learn_django/
+             - deploy: https://realpython.com/django-nginx-gunicorn/
 
 - 5. Frontend dev/web design:
   	     - Guide for mapping out future site: https://www.freecodecamp.org/news/what-is-a-wireframe-ux-design-tutorial-website/
