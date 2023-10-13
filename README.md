@@ -31,14 +31,14 @@ DONE:
 
 TODO:
 
-- Make site plan:
-	- find plan sketching software? -> Wireframe! (5.1, 5.2)
-	- Learn to use wireframe
-
 - Setup Django! (4.1, 4.2, 4.3, 4.4, 4.7)
   	basic homepage: 4.6
   	blog: 4.5
         first deployment: 4.9, 4.7 pages 61 - 64
+        
+- Make site plan:
+	- find plan sketching software? -> Wireframe! (5.1, 5.2)
+	- Learn to use wireframe
   
 - Setup TCP Wrapper
 
