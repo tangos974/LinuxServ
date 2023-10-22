@@ -98,7 +98,7 @@ Sources:
   	     - Guide for mapping out future site: https://www.freecodecamp.org/news/what-is-a-wireframe-ux-design-tutorial-website/
              - Potential online tool: https://wireframe.cc/
 
-- 6. Blog post idea:
+- 6. Blog posts idea:
              - Tracking progress (maybe not a blog post, a general updating feature? Or regular blog entries?) -> progress towardw what? Becoming devops engineer -> post 1 what is a devops engineer, what does he needs to know?
      			- Useful because: Allow me to have a clear picture of where I am -> define where i need to improve
      			- Serves to build portfolio
