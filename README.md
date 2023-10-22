@@ -99,7 +99,17 @@ Sources:
              - Potential online tool: https://wireframe.cc/
 
 - 6. Blog post idea:
-             - Tracking progress-> progress towardw what? Becoming devops engineer -> post 1 what is a devops engineer, what does he needs to know?
+             - Tracking progress (maybe not a blog post, a general updating feature? Or regular blog entries?) -> progress towardw what? Becoming devops engineer -> post 1 what is a devops engineer, what does he needs to know?
+     			- Useful because: Allow me to have a clear picture of where I am -> define where i need to improve
+     			- Serves to build portfolio
+     			- Use useful for future job interviews (talking points, show website as honest description of skills)
      			- https://www.youtube.com/watch?v=EAXdnPWUCcc
      			- The Phoenix project
+     			- Explaining devops to people that have technical knowledge
+     			- Explaining devops to people that don't have any technical skills
+	    - Making the first post which is gonna serve as a template for later posts:
+     			- Talking about a soecific clear topic, defining/explaining it
+       			- Have a section "What I did"
+       			- Have a section "what I learned"
+       			- Have a section "What can I do more/need to do to complete"
      
