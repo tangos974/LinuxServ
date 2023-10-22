@@ -97,4 +97,9 @@ Sources:
 - 5. Frontend dev/web design:
   	     - Guide for mapping out future site: https://www.freecodecamp.org/news/what-is-a-wireframe-ux-design-tutorial-website/
              - Potential online tool: https://wireframe.cc/
+
+- 6. Blog post idea:
+             - Tracking progress-> progress towardw what? Becoming devops engineer -> post 1 what is a devops engineer, what does he needs to know?
+     			- https://www.youtube.com/watch?v=EAXdnPWUCcc
+     			- The Phoenix project
      
