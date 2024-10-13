@@ -13,7 +13,6 @@ type BoopParams = {
 
 export default function boop(node: HTMLElement, params: BoopParams) {
 	const { setter } = params;
-	const isBooped = params.isBooped ?? false;
 	const { x = 0, y = 0, rotation = 0, scale = 1, timing = 150 } = params;
 
 	const springyAnimation = spring(

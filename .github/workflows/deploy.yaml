@@ -1,0 +1,89 @@
+name: Web CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Prettier Check
+        run: npx prettier --check .
+
+      - name: Run ESLint
+        run: npx eslint .
+
+  build:
+    runs-on: ubuntu-latest
+    needs: lint
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run build
+        run: npm run build
+
+      - name: Install Playwright Browsers
+        run: npx playwright install
+
+      - name: Run tests
+        run: npx playwright test
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to Server
+        env:
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+          RESTART_CMD: ${{ secrets.RESTART_CMD }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+          # Deploy files via rsync, specifying port from secret
+          rsync -avz -e "ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa -p $SSH_PORT" ./build/ ${DEPLOY_USER}@${SERVER_IP}:${DEPLOY_PATH}
+
+          # Restart Apache using the command stored in the secret
+          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa -p $SSH_PORT ${DEPLOY_USER}@${SERVER_IP} "$RESTART_CMD"
