@@ -7,9 +7,10 @@ on:
 
 jobs:
   lint:
+    name: Lint Code
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the code
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
       - name: Set up Node.js
@@ -17,7 +18,7 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm install
 
       - name: Run Prettier Check
@@ -27,11 +28,11 @@ jobs:
         run: npx eslint .
 
   build:
+    name: Build Application
     runs-on: ubuntu-latest
     needs: lint
-
     steps:
-      - name: Check out the code
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
       - name: Set up Node.js
@@ -39,51 +40,46 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm install
 
-      - name: Run build
+      - name: Build the App
         run: npm run build
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: build
+
+  docker:
+    name: Build and Push Docker Image
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build
+          path: ./build
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build Docker Image
+        run: docker build -f Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/tfremont:latest .
+
+      - name: Push Docker Image
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/tfremont:latest
 
       - name: Install Playwright Browsers
         run: npx playwright install
 
-      - name: Run tests
+      - name: Run Playwright Tests
         run: npx playwright test
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Check out the code
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build project
-        run: npm run build
-
-      - name: Deploy to Server
-        env:
-          SSH_KEY: ${{ secrets.SSH_KEY }}
-          SERVER_IP: ${{ secrets.SERVER_IP }}
-          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
-          SSH_PORT: ${{ secrets.SSH_PORT }}
-          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
-          RESTART_CMD: ${{ secrets.RESTART_CMD }}
-        run: |
-          mkdir -p ~/.ssh
-          echo "$SSH_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-
-          # Deploy files via rsync, specifying port from secret
-          rsync -avz --delete --no-times --no-perms -e "ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa -p $SSH_PORT" ./build/ ${DEPLOY_USER}@${SERVER_IP}:${DEPLOY_PATH}
-
-          # Restart Apache using the command stored in the secret
-          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa -p $SSH_PORT ${DEPLOY_USER}@${SERVER_IP} "$RESTART_CMD"
