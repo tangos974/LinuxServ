@@ -45,8 +45,6 @@ tests/
 .eslint.config.js
 .prettierignore
 .prettierrc
-tsconfig.json
-vite.config.ts
 
 # Temporary files
 *.tmp
