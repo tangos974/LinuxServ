@@ -83,7 +83,7 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
 
           # Deploy files via rsync, specifying port from secret
-          rsync -avz --no-times --no-perms -e "ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa -p $SSH_PORT" ./build/ ${DEPLOY_USER}@${SERVER_IP}:${DEPLOY_PATH}
+          rsync -avz --delete --no-times --no-perms -e "ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa -p $SSH_PORT" ./build/ ${DEPLOY_USER}@${SERVER_IP}:${DEPLOY_PATH}
 
           # Restart Apache using the command stored in the secret
           ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa -p $SSH_PORT ${DEPLOY_USER}@${SERVER_IP} "$RESTART_CMD"
