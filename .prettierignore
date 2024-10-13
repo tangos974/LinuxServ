@@ -1,0 +1,18 @@
+# Package Managers
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Ignore build files
+build/
+dist/
+
+# Ignore minified JavaScript
+*.min.js
+
+# Ignore node_modules
+node_modules/
+
+# Ignore specific files or directories
+public/
+static/

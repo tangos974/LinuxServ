@@ -1,0 +1,21 @@
+/* src/styles/app.css */
+body {
+    font-family: 'Libre Baskerville', serif;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    font-family: 'Spectral', serif;
+}
+
+h1 {
+    color: #253bb9 !important;
+}
+
+.text-primary {
+    color: #253bb9 !important;
+}
+
+.text-secondary {
+    color: #6c757d;
+}
