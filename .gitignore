@@ -29,3 +29,6 @@ public/
 # Test stuff
 playwright-report
 test-results
+
+# IDE-related
+.vscode
