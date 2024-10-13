@@ -33,7 +33,7 @@
 
 	const socialLinks = [
 		{ name: 'GitHub', link: 'https://github.com/tangos974' },
-		{ name: 'LinkedIn', link: 'https://www.linkedin.com/in/your-linkedin-profile' },
+		{ name: 'LinkedIn', link: 'www.linkedin.com/in/tanguy-fremont-96068214a' },
 		{ name: 'Mail', link: 'mailto:fremonttanguy@yahoo.fr' }
 	];
 
