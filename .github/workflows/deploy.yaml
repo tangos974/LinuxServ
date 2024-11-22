@@ -7,28 +7,44 @@ on:
 
 jobs:
   lint-and-test:
-    name: Lint Code
+    name: Lint and Test Code
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: "20"
+
+      - name: Cache Node.js modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install Dependencies
+        working-directory: ./frontend
         run: npm install
 
       - name: Run Prettier Check
+        working-directory: ./frontend
         run: npx prettier --check .
 
       - name: Run ESLint
+        working-directory: ./frontend
         run: npx eslint .
 
+      - name: Install Playwright Browsers
+        working-directory: ./frontend
+        run: npx playwright install --with-deps
+
       - name: Run Tests
-        run: npx playwright install && npx playwright test
+        working-directory: ./frontend
+        run: npx playwright test
 
   build:
     name: Build Application
@@ -36,24 +52,34 @@ jobs:
     needs: lint-and-test
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: "20"
+
+      - name: Cache Node.js modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install Dependencies
-        run: npm install
+        working-directory: ./frontend
+        run: npm ci
 
       - name: Build the App
+        working-directory: ./frontend
         run: npm run build
 
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: build
-          path: build
+          name: frontend-build
+          path: ./frontend/build
 
   docker:
     name: Build and Push Docker Image
@@ -66,8 +92,8 @@ jobs:
       - name: Download Build Artifacts
         uses: actions/download-artifact@v3
         with:
-          name: build
-          path: ./build
+          name: frontend-build
+          path: ./frontend/build
 
       - name: Login to Docker Hub
         uses: docker/login-action@v2
@@ -76,10 +102,15 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
-        run: docker build -f Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/tfremont:latest .
+        working-directory: ./frontend
+        run: |
+          docker build -f Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/tfremont:latest .
+          docker tag ${{ secrets.DOCKER_USERNAME }}/tfremont:latest ${{ secrets.DOCKER_USERNAME }}/tfremont:${{ github.sha }}
 
       - name: Push Docker Image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/tfremont:latest
+        run: |
+          docker push ${{ secrets.DOCKER_USERNAME }}/tfremont:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/tfremont:${{ github.sha }}
 
   deploy:
     name: Deploy to k3s
@@ -92,9 +123,17 @@ jobs:
       - name: Set up kubectl
         uses: azure/setup-kubectl@v3
         with:
-          version: 'latest'
+          version: "latest"
 
       - name: Configure kubeconfig
         run: |
           mkdir -p $HOME/.kube
           echo "${{ secrets.KUBECONFIG }}" > $HOME/.kube/config
+
+      - name: Apply Kubernetes Manifest
+        run: |
+          kubectl apply -f k8s/frontend-deployment.yaml
+
+      - name: Wait for Rollout
+        run: |
+          kubectl rollout status deployment/frontend
