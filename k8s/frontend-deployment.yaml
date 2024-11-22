@@ -6,7 +6,7 @@ metadata:
   labels:
     app: frontend
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: frontend
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: your-dockerhub-username/frontend:latest
+          image: tanguyfremont/portfolio:frontend-latest
           ports:
             - containerPort: 80
           readinessProbe:
@@ -33,12 +33,11 @@ spec:
             initialDelaySeconds: 15
             periodSeconds: 20
           resources:
-            requests:
+            limits:
               cpu: "50m"
               memory: "64Mi"
-            limits:
-              cpu: "1"
-              memory: "1Gi"
+      imagePullSecrets:
+        - name: regcred
 ---
 # Service for the frontend application
 apiVersion: v1

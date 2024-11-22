@@ -1,0 +1,16 @@
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: frontend-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: frontend
+  minReplicas: 0 # Scale down to 0 replicas when idle
+  maxReplicas: 3 # Scale up to 5 replicas during high traffic
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        targetAverageUtilization: 15 # Scale when CPU utilization exceeds 10%
