@@ -16,3 +16,6 @@ node_modules/
 # Ignore specific files or directories
 public/
 static/
+
+# svelte stuff
+.svelte-kit/
