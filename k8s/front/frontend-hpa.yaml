@@ -7,10 +7,12 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: frontend
-  minReplicas: 0 # Scale down to 0 replicas when idle
-  maxReplicas: 3 # Scale up to 5 replicas during high traffic
+  minReplicas: 1 # Scale down to 1 replicas when idle
+  maxReplicas: 3
   metrics:
     - type: Resource
       resource:
         name: cpu
-        targetAverageUtilization: 15 # Scale when CPU utilization exceeds 10%
+        target:
+          type: Utilization
+          averageUtilization: 15 

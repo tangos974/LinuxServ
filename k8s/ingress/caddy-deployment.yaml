@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: caddy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: caddy
+  template:
+    metadata:
+      labels:
+        app: caddy
+    spec:
+      containers:
+        - name: caddy
+          image: caddy:2.9-alpine
+          ports:
+            - containerPort: 80
+            - containerPort: 443
+          volumeMounts:
+            - name: caddy-config
+              mountPath: /etc/caddy/Caddyfile
+              subPath: Caddyfile
+          resources:
+            limits:
+              cpu: "100m"
+              memory: "128Mi"
+      volumes:
+        - name: caddy-config
+          configMap:
+            name: caddy-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: caddy
+spec:
+  selector:
+    app: caddy
+  ports:
+    - protocol: TCP
+      name: http
+      port: 80        # Public HTTP port
+      targetPort: 80  # Caddy HTTP port
+    - protocol: TCP
+      name: https
+      port: 443       # Public HTTPS port
+      targetPort: 443 # Caddy HTTPS port
+  type: NodePort

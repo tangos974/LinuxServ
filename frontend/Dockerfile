@@ -1,17 +1,16 @@
-FROM caddy:2.9-alpine
+FROM alpine:latest
 
-# Clean default Caddy config
-RUN rm /etc/caddy/Caddyfile
-RUN rm -rf /usr/share/caddy
+# Install a lightweight HTTP server
+RUN apk add --no-cache busybox-extras
 
-# Copy the static files into Caddy's default public directory
-COPY build /usr/share/caddy
+# Copy static files to the web root
+COPY build /www
 
-# Copy the custom Caddyfile
-COPY Caddyfile /etc/caddy/Caddyfile
+# Rename app.html to index.html to serve it as the root
+RUN mv /www/app.html /www/index.html
 
-# Expose HTTP traffic
+# Expose the port for the HTTP server
 EXPOSE 80
 
-# Start Caddy
-CMD ["caddy", "run", "--config", "/etc/caddy/Caddyfile"]
+# Command to serve the files using busybox HTTP server
+CMD ["httpd", "-f", "-h", "/www", "-p", "80"]
