@@ -17,7 +17,8 @@
 	}
 </script>
 
-<a class="boopable-link"
+<a
+	class="boopable-link"
 	{href}
 	{target}
 	rel="noopener noreferrer"
