@@ -17,19 +17,18 @@
 	}
 </script>
 
-<a
+<a class="boopable-link"
 	{href}
 	{target}
 	rel="noopener noreferrer"
 	use:boop={{ ...boopParams, setter: setIsBooped }}
-	class="text-decoration-none"
 	{...$$restProps}
 >
 	<slot />
 </a>
 
 <style>
-	a {
+	a.boopable-link {
 		color: #000000;
 		text-decoration: none;
 		position: relative;
@@ -39,12 +38,12 @@
 		padding-right: 0;
 	}
 
-	a:hover {
+	a.boopable-link:hover {
 		color: #0056b3;
 		padding-right: 0.5rem; /* Add padding on hover for the arrow space */
 	}
 
-	a::after {
+	a.boopable-link::after {
 		content: '⤴';
 		position: absolute;
 		transform: translateX(-5px);
@@ -54,7 +53,7 @@
 		opacity: 0;
 	}
 
-	a:hover::after {
+	a.boopable-link:hover::after {
 		transform: translateX(0);
 		opacity: 1;
 	}

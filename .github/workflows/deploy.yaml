@@ -106,7 +106,7 @@ jobs:
       - name: Build Docker Image
         working-directory: ./frontend
         run: |
-          docker build -f Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/portfolio:frontend-latest .
+          docker build -f prod.Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/portfolio:frontend-latest .
           docker tag ${{ secrets.DOCKER_USERNAME }}/portfolio:frontend-latest ${{ secrets.DOCKER_USERNAME }}/portfolio:frontend-${{ github.sha }}
 
       - name: Push Docker Image

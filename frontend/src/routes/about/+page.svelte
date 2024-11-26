@@ -21,7 +21,7 @@
 			{ text: ', Graduating Summer 2025' }
 		],
 		[
-			{ text: 'DataOps Engineer & Lead Dev @ ' },
+			{ text: 'DataOps Engineer @ ' },
 			{ text: 'Easier Labs', link: 'https://www.easierlabs.ai/', isLinked: true }
 		],
 		[
@@ -39,8 +39,8 @@
 
 	const description: TextPart[] = [
 		{ text: 'Computer scientist based in Paris. Currently working mostly on refining ' },
-		{ text: 'A.U.D.I.O', link: 'https://www.easierlabs.ai/#Services', isLinked: true },
-		{ text: "'s data pipeline." }
+		{ text: 'Easier Labs', link: 'https://www.easierlabs.ai/#Services', isLinked: true },
+		{ text: "' infra." }
 	];
 </script>
 
