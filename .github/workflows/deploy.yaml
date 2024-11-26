@@ -132,10 +132,8 @@ jobs:
           mkdir -p $HOME/.kube
           echo "${{ secrets.KUBECONFIG }}" > $HOME/.kube/config
 
-      - name: Apply Kubernetes Manifest
+      - name: Apply Kubernetes Manifest with Rollout
         run: |
           kubectl apply -f k8s/front/frontend-deployment.yaml
-
-      - name: Wait for Rollout
-        run: |
+          kubectl annotate deployment frontend kubernetes.io/change-cause="Deployed at $(date)" --overwrite
           kubectl rollout status deployment/frontend
