@@ -154,7 +154,7 @@ a.boopable-link:hover::after {
 	margin-left: 200px; /* Same as the width of .nav-panel */
 	margin-top: 2.5rem; /* Same as the height of the top header */
 	padding: 1rem;
-	max-width: 1200px;
+	max-width: 80vw; /* 80% of the viewport */
 }
 
 /* Resource Group Styles */

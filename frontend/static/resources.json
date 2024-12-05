@@ -43,7 +43,10 @@
 		"author": "H. G. Wells",
 		"link": "https://www.nand2tetris.org/",
 		"Description": "Ever wondered how ones and zeroes are put together to make a computer? This is the book that will answer all your questions",
-		"tags": ["computer architecture", "boolean logic", "assembly language", "VHDL", "book"]
+		"tags": ["computer architecture", "boolean logic", "assembly language", "VHDL", "book"],
+		"additional_resources": {
+			"Free online pdf of the book 'Elements of computing systems'": "https://cmls-global.com/wp-content/uploads/2021/08/The-elements-of-computing-systems-building-a-modern-computer.pdf"
+		}
 	},
 	{
 		"title": "Building an 8-bit breadboard computer",
@@ -79,5 +82,12 @@
 		"link": "/Machine_Learning_with_PyTorch_and_Scikit-Learn.pdf",
 		"Description": "Not finished yet",
 		"tags": ["python", "machine learning", "book"]
+	},
+	{
+		"title": "Learn Git Branching",
+		"author": "Git",
+		"link": "https://learngitbranching.js.org/",
+		"Description": "A fun little game to learn about branching and merging",
+		"tags": ["git", "game"]
 	}
 ]
