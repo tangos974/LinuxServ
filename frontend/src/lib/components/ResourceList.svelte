@@ -34,6 +34,7 @@
 	.resource-group h2 {
 		margin-bottom: 1rem;
 		margin-top: 4rem;
+		text-transform: capitalize;
 		text-align: center;
 	}
 

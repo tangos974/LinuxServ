@@ -22,13 +22,20 @@
 		"author": "Gene Kim, Kevin Behr, George Spafford",
 		"link": "https://theswissbay.ch/pdf/Books/Computer%20science/PhoenixProjectExcerpt.pdf",
 		"Description": "A book about the origins of Agile and DevOps and how it took inspiration from Lean in manufacturing. Not technical at all, but too important in the history of DevOps to be skipped",
-		"tags": ["organization", "fiction", "history", "devops", "book"]
+		"tags": ["organization", "history", "devops", "book"]
+	},
+	{
+		"title": "The DevOps Handbook",
+		"author": "Gene Kim, Jez Humble, Patrick Debois, John Willis",
+		"link": "/TheDevOpsHandbook.pdf",
+		"Description": "The practical follow-up to the Phoenix Project - Still not technical enough to go into actual DevOps tools",
+		"tags": ["organization", "history", "devops", "book"]
 	},
 	{
 		"title": "Accelerate",
 		"author": "Nicole Forsgren, Jez Humble, Gene Kim",
 		"link": "/Accelerate.pdf",
-		"Description": "Another foundational book about DevOps from a company organization perspective, this one is based on data issued from research",
+		"Description": "Another foundational book about DevOps from a company organization perspective - like the DevOps Handbook but this one is based more on data issued from research",
 		"tags": ["organization", "research", "devops", "book"]
 	},
 	{
@@ -39,10 +46,38 @@
 		"tags": ["computer architecture", "boolean logic", "assembly language", "VHDL", "book"]
 	},
 	{
+		"title": "Building an 8-bit breadboard computer",
+		"author": "Ben Eater",
+		"link": "https://eater.net/8bit",
+		"Description": "This series of videos was particularly helpful to me when I was learning about computer architecture, but his entire website/YouTube channel is worth a visit",
+		"tags": ["computer architecture", "boolean logic", "assembly language", "video"]
+	},
+	{
 		"title": "An unbiased evaluation of environment management and packaging tools",
 		"author": "Anna-Lena Popkes",
 		"link": "https://alpopkes.com/posts/python/packaging_tools/",
 		"Description": "The ultimate overview of tooling around the Python ecosystem",
 		"tags": ["python", "packaging tools", "blogpost"]
+	},
+	{
+		"title": "Introduction to Machine Learning with Python",
+		"author": "Andreas C. Muller, Sarah Guido",
+		"link": "https://inprogrammer.com/wp-content/uploads/2023/02/Andreas-C.-Muller-Sarah-Guido-Introduction-to-Machine-Learning-with-Python_-A-Guide-for-Data-Scientists.pdf",
+		"Description": "A great, albeit a little outdated first dip into ML using scikit-learn",
+		"tags": ["python", "machine learning", "book"]
+	},
+	{
+		"title": "PyTorch for Deep Learning & Machine Learning – Full Course",
+		"author": "freeCodeCamp.org",
+		"link": "https://www.youtube.com/watch?v=V_xro1bcAuA",
+		"Description": "How I learned PyTorch and made my first machine learning model. If you already know a little about Tensors, skip to the 6 hour mark",
+		"tags": ["python", "machine learning", "video"]
+	},
+	{
+		"title": "Machine Learning with Pythorch and Scikit-Learn",
+		"author": "S. Raschka,Y. H. Liu & V. Mirjalili",
+		"link": "/Machine_Learning_with_PyTorch_and_Scikit-Learn.pdf",
+		"Description": "Not finished yet",
+		"tags": ["python", "machine learning", "book"]
 	}
 ]
