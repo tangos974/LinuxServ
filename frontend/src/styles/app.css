@@ -2,6 +2,9 @@
 body {
 	font-family: 'Libre Baskerville', serif;
 	background-color: #f9f9f9;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
 }
 
 h1,
@@ -20,4 +23,180 @@ h1 {
 
 .text-secondary {
 	color: #6c757d;
+}
+
+/* Header */
+nav.header {
+	background-color: #333;
+	color: white;
+	padding: 0.5rem; /* Adjust padding as needed */
+	position: fixed;
+	height: 2.5rem;
+	top: 0;
+	left: 0;
+	width: 100%; /* Full width */
+	z-index: 1000; /* Ensure it's above other content */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ul.nav-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 1rem;
+}
+
+a.nav-link {
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+/* End Header */
+
+/* Boopable Link */
+a.boopable-link {
+	color: #000000;
+	text-decoration: none;
+	position: relative;
+	transition:
+		color 0.3s ease,
+		padding-right 0.3s ease;
+	padding-right: 0;
+}
+
+a.boopable-link:hover {
+	color: #0056b3;
+	padding-right: 0.5rem; /* Add padding on hover for the arrow space */
+}
+
+a.boopable-link::after {
+	content: '⤴';
+	position: absolute;
+	transform: translateX(-5px);
+	transition:
+		transform 0.3s ease,
+		opacity 0.3s ease;
+	opacity: 0;
+}
+
+a.boopable-link:hover::after {
+	transform: translateX(0);
+	opacity: 1;
+}
+/* End Boopable Link */
+
+/* Header Content */
+.header-content {
+	text-align: center;
+	margin: auto;
+	padding: 0 1rem;
+	max-width: 800px;
+	margin-top: 4rem;
+}
+
+.header-content p {
+	font-size: 1.2rem;
+	color: #555;
+	line-height: 1.6;
+}
+
+.header-content a {
+	color: #007acc;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.header-content a:hover {
+	text-decoration: underline;
+}
+
+/* Navigation Panel */
+.nav-panel {
+	position: fixed;
+	top: 2.5rem; /* Match the height of the fixed header */
+	left: 0;
+	width: 200px;
+	height: calc(100vh - 2.5rem); /* Full height minus the fixed header's height */
+	background: #cac7c7;
+	padding: 1rem;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+	overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.nav-panel ul {
+	list-style: none;
+	padding: 0;
+}
+
+.nav-panel li {
+	margin-bottom: 0.5rem;
+}
+
+.nav-panel li a {
+	text-decoration: none;
+	color: #007acc;
+}
+
+.nav-panel li a:hover {
+	text-decoration: underline;
+}
+
+/* Main Content Layout */
+.main-content {
+	margin-left: 200px; /* Same as the width of .nav-panel */
+	margin-top: 2.5rem; /* Same as the height of the top header */
+	padding: 1rem;
+	max-width: 1200px;
+}
+
+/* Resource Group Styles */
+.resource-group ul {
+	padding: 0;
+	margin-left: 1rem;
+}
+
+.resource-group li {
+	margin-bottom: 2rem; /* Space between each resource */
+}
+
+.resource-group li p {
+	margin: 0rem; /* Uniform spacing between paragraphs */
+}
+
+/* General Button Styles */
+button {
+	background-color: #007acc; /* Primary color */
+	color: white; /* White text for contrast */
+	border: none; /* Remove border */
+	border-radius: 5px; /* Rounded corners */
+	padding: 0.5rem 1rem; /* Add padding */
+	font-size: 1rem; /* Make the text more readable */
+	cursor: pointer; /* Change cursor to pointer */
+	transition: all 0.3s ease; /* Add a smooth transition */
+}
+
+/* Hover Effects */
+button:hover {
+	background-color: #005fa3; /* Darker shade on hover */
+	transform: scale(1.05); /* Slightly enlarge */
+}
+
+/* Active State */
+button:active {
+	background-color: #004f85; /* Even darker on click */
+	transform: scale(1); /* Reset size */
+}
+
+/* Focus Style */
+button:focus {
+	outline: none; /* Remove default outline */
+	box-shadow: 0 0 0 3px rgba(0, 122, 204, 0.5); /* Add custom focus ring */
 }

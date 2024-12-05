@@ -1,0 +1,48 @@
+[
+	{
+		"title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+		"author": "Robert C. Martin",
+		"link": "https://inprogrammer.com/wp-content/uploads/2022/01/Martin-Robert-Cecil-Clean-code_-a-handbook-of-agile-software-craftsmanship-2009-Prentice-Hall-libgen.lc_.pdf",
+		"Description": "First and most well known of the Clean series of Uncle Bob, a must-read on TDD",
+		"additional_resources": {
+			"Test driven development - A no-BS guide by the Excellent Continuous Delivery YouTuber": "https://www.youtube.com/watch?v=ln4WnxX-wrw&t=96s",
+			"A series of conferences by the man himself": "https://www.youtube.com/watch?v=ln4WnxX-wrw&t=96s"
+		},
+		"tags": ["coding practices", "TDD", "learn to code", "Java", "book"]
+	},
+	{
+		"title": "The Clean Coder",
+		"author": "Robert C. Martin",
+		"link": "https://blog.freec.asia/wp-content/uploads/2020/12/The-Clean-Coder.pdf",
+		"Description": "What is a good Dev, where does he fit in an organization? How should he organize his time at work? Here you'll find advice on stuff like the pomodoro technique, pair programming, and more",
+		"tags": ["organization", "personal advice", "soft skills", "life in the day", "book"]
+	},
+	{
+		"title": "The Phoenix Project",
+		"author": "Gene Kim, Kevin Behr, George Spafford",
+		"link": "https://theswissbay.ch/pdf/Books/Computer%20science/PhoenixProjectExcerpt.pdf",
+		"Description": "A book about the origins of Agile and DevOps and how it took inspiration from Lean in manufacturing. Not technical at all, but too important in the history of DevOps to be skipped",
+		"tags": ["organization", "fiction", "history", "devops", "book"]
+	},
+	{
+		"title": "Accelerate",
+		"author": "Nicole Forsgren, Jez Humble, Gene Kim",
+		"link": "/Accelerate.pdf",
+		"Description": "Another foundational book about DevOps from a company organization perspective, this one is based on data issued from research",
+		"tags": ["organization", "research", "devops", "book"]
+	},
+	{
+		"title": "Nand to Tetris",
+		"author": "H. G. Wells",
+		"link": "https://www.nand2tetris.org/",
+		"Description": "Ever wondered how ones and zeroes are put together to make a computer? This is the book that will answer all your questions",
+		"tags": ["computer architecture", "boolean logic", "assembly language", "VHDL", "book"]
+	},
+	{
+		"title": "An unbiased evaluation of environment management and packaging tools",
+		"author": "Anna-Lena Popkes",
+		"link": "https://alpopkes.com/posts/python/packaging_tools/",
+		"Description": "The ultimate overview of tooling around the Python ecosystem",
+		"tags": ["python", "packaging tools", "blogpost"]
+	}
+]

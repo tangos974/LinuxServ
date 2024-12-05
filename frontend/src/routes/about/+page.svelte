@@ -3,6 +3,7 @@
 	import '../../styles/app.css';
 	import AboutHeader from '$lib/components/AboutHeader.svelte';
 	import AboutPic from '$lib/components/AboutPic.svelte';
+	import BoopableLink from '$lib/components/BoopableLink.svelte';
 
 	type TextPart = {
 		text: string;
@@ -50,4 +51,18 @@
 
 	<!-- Profile Image and Description Section -->
 	<AboutPic image={profileImage} {altText} {description} />
+
+	<!-- Footer Section -->
+	<footer class="text-center mt-5">
+		<p>
+			This website is <BoopableLink
+				href="https://github.com/tangos974/LinuxServ"
+				boopParams={{ isBooped: true, y: 3, timing: 150 }}>fully open source</BoopableLink
+			> and was written in <BoopableLink
+				href="https://svelte.dev/"
+				boopParams={{ isBooped: true, y: 3, timing: 150 }}>Svelte</BoopableLink
+			>.
+		</p>
+		<p>&copy; {new Date().getFullYear()} Tanguy Frémont. All rights reserved.</p>
+	</footer>
 </main>

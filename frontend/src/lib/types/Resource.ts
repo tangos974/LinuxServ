@@ -1,8 +1,9 @@
 // src/types/Book.ts
-export type Book = {
+export type Resource = {
 	title: string;
 	author: string;
-	pdf_link: string;
-	Description: string;
+	link: string;
+	Description?: string;
 	additional_resources?: Record<string, string>;
+	tags: string[];
 };

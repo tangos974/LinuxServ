@@ -9,7 +9,7 @@
 <div class="text-center">
 	<h1 class="display-4 text-primary mb-3">{name}</h1>
 
-	<div class="mb-4">
+	<div class="mb-1">
 		{#each socialLinks as link}
 			<BoopableLink
 				href={link.link}

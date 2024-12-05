@@ -17,3 +17,6 @@ services:
         - action: sync
           path: ./frontend/src
           target: /app/src
+        - action: rebuild
+          path: ./frontend
+          target: /static

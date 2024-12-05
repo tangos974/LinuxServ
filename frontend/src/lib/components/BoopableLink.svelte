@@ -27,35 +27,3 @@
 >
 	<slot />
 </a>
-
-<style>
-	a.boopable-link {
-		color: #000000;
-		text-decoration: none;
-		position: relative;
-		transition:
-			color 0.3s ease,
-			padding-right 0.3s ease;
-		padding-right: 0;
-	}
-
-	a.boopable-link:hover {
-		color: #0056b3;
-		padding-right: 0.5rem; /* Add padding on hover for the arrow space */
-	}
-
-	a.boopable-link::after {
-		content: '⤴';
-		position: absolute;
-		transform: translateX(-5px);
-		transition:
-			transform 0.3s ease,
-			opacity 0.3s ease;
-		opacity: 0;
-	}
-
-	a.boopable-link:hover::after {
-		transform: translateX(0);
-		opacity: 1;
-	}
-</style>
