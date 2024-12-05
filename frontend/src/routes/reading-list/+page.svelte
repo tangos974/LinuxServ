@@ -3,7 +3,6 @@
 	import { onMount } from 'svelte';
 	import type { Resource } from '$lib/types/Resource';
 
-	let resources: Resource[] = [];
 	let groupedResources: Map<string, Resource[]> = new Map();
 	let selectedTags: Set<string> = new Set(); // Keeps track of selected tags
 	let tags: Set<string> = new Set();
@@ -18,8 +17,6 @@
 				throw new Error(`HTTP error! status: ${response.status}`);
 			}
 			const data: Resource[] = await response.json();
-			console.log('Fetched data:', data); // Debugging line
-			resources = data;
 
 			// Group resources by their first tag
 			groupedResources = data.reduce((map, resource) => {
@@ -31,13 +28,10 @@
 				return map;
 			}, new Map<string, Resource[]>());
 
-			console.log('Grouped resources:', groupedResources); // Debugging line
-
 			// Collect all unique tags
 			tags = new Set(data.flatMap((resource) => resource.tags));
 		} catch (error) {
 			console.error('Failed to fetch resources:', error);
-			// Optionally, handle the error in the UI (e.g., display a message)
 		}
 	});
 
