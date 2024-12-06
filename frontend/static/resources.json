@@ -8,14 +8,14 @@
 			"Test driven development - A no-BS guide by the Excellent Continuous Delivery YouTuber": "https://www.youtube.com/watch?v=ln4WnxX-wrw&t=96s",
 			"A series of conferences by the man himself": "https://www.youtube.com/watch?v=ln4WnxX-wrw&t=96s"
 		},
-		"tags": ["coding practices", "TDD", "learn to code", "Java", "book"]
+		"tags": ["coding practices", "Java", "book"]
 	},
 	{
 		"title": "The Clean Coder",
 		"author": "Robert C. Martin",
 		"link": "https://blog.freec.asia/wp-content/uploads/2020/12/The-Clean-Coder.pdf",
 		"Description": "What is a good Dev, where does he fit in an organization? How should he organize his time at work? Here you'll find advice on stuff like the pomodoro technique, pair programming, and more",
-		"tags": ["organization", "personal advice", "soft skills", "life in the day", "book"]
+		"tags": ["organization", "soft skills", "book"]
 	},
 	{
 		"title": "The Phoenix Project",
@@ -36,14 +36,14 @@
 		"author": "Nicole Forsgren, Jez Humble, Gene Kim",
 		"link": "/Accelerate.pdf",
 		"Description": "Another foundational book about DevOps from a company organization perspective - like the DevOps Handbook but this one is based more on data issued from research",
-		"tags": ["organization", "research", "devops", "book"]
+		"tags": ["organization", "devops", "book"]
 	},
 	{
 		"title": "Nand to Tetris",
 		"author": "H. G. Wells",
 		"link": "https://www.nand2tetris.org/",
 		"Description": "Ever wondered how ones and zeroes are put together to make a computer? This is the book that will answer all your questions",
-		"tags": ["computer architecture", "boolean logic", "assembly language", "VHDL", "book"],
+		"tags": ["computer architecture", "boolean logic", "assembly language", "book"],
 		"additional_resources": {
 			"Free online pdf of the book 'Elements of computing systems'": "https://cmls-global.com/wp-content/uploads/2021/08/The-elements-of-computing-systems-building-a-modern-computer.pdf"
 		}
@@ -85,9 +85,58 @@
 	},
 	{
 		"title": "Learn Git Branching",
-		"author": "Git",
+		"author": "Peter Cottle",
 		"link": "https://learngitbranching.js.org/",
 		"Description": "A fun little game to learn about branching and merging",
 		"tags": ["git", "game"]
+	},
+	{
+		"title": "Tech Radars",
+		"author": "N/A",
+		"link": "https://www.cncf.io/reports/?_sft_lf-report-type=radar",
+		"Description": "These reports on what technology is being used in the cloud are invaluable for anyone working in DevOps or any field related to cloud computing. There are many so-called radars, most famous being the one regularily published by the CNCF, here's my personnal selection",
+		"tags": ["technology watch", "devops", "article"],
+		"additional_resources": {
+			"This one is more general than the CNCF": "https://cloud.theodo.com/en/tech-radar"
+		}
+	},
+	{
+		"title": "Prepare.sh for devops",
+		"author": "N/A",
+		"link": "https://prepare.sh/",
+		"Description": "A collection of real technical interview questions for DevOps roles. The website also has other IT engineering roles covered. You have to sign up, which I don't like, but (for now at least) it's still free",
+		"tags": ["interview prep", "devops", "website"]
+	},
+	{
+		"title": "DevOps Interview Helpers Videos",
+		"author": "Mamun Rashid",
+		"link": "https://www.youtube.com/playlist?list=PLRmSE-IsokP0U5VUCCUOsYPQ4OV2wCMtT",
+		"Description": "A senior SRE asks and answers every imaginable interview question. To the point yet exhaustive, there are no less than 200 videos in the playlist. A hidden gem of a YouTube channel",
+		"tags": ["interview prep", "devops", "video"]
+	},
+	{
+		"title": "roadmap.sh for devops",
+		"author": "N/A",
+		"link": "https://roadmap.sh/devops",
+		"Description": "A knowledge map of everything you need to be familiar with to call yourself a DevOps engineer. While the order and content of some items can be debatable, it is in my opinion THE best resource for newbies getting into the space",
+		"tags": ["learning", "devops", "website"]
+	},
+	{
+		"title": "How TCP really works // Three-way handshake // TCP/IP Deep Dive",
+		"author": "David Bombal",
+		"link": "https://www.youtube.com/watch?v=rmFX1V49K8U",
+		"Description": "A thorough deep dive into TCP and the three-way handshake using Wireshark",
+		"tags": ["networking", "tcp", "video"]
+	},
+	{
+		"title": " OSI and TCP IP Models - Best Explanation",
+		"author": "N/A",
+		"link": "https://www.youtube.com/watch?v=3b_TAYtzuho",
+		"Description": "Title doesn't lie. The OSI model can be confusing, but this video makes it simple and easy to understand",
+		"tags": ["networking", "tcp", "video"],
+		"additional_resources": {
+			"Another Video of the same guy going over networking basics. Start here if you're new to networking": "https://www.youtube.com/watch?v=kNKHM_isojI",
+			"Lewd Backronyms to remember the layers names": "https://www.reddit.com/r/networking/comments/2k9dcd/whats_your_best_techniquebackronym_for/"
+		}
 	}
 ]

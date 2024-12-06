@@ -2,6 +2,7 @@
 	import ResourceList from '$lib/components/ResourceList.svelte';
 	import { onMount } from 'svelte';
 	import type { Resource } from '$lib/types/Resource';
+	import BoopableLink from '$lib/components/BoopableLink.svelte';
 
 	let groupedResources: Map<string, Resource[]> = new Map();
 	let selectedTags: Set<string> = new Set(); // Keeps track of selected tags
@@ -94,13 +95,18 @@
 	<div class="header-content">
 		<p>
 			Below is my entirely personal - absolutely not exhaustive - reading list. It's a work in
-			progress - potentially forever, as I keep adding books I want to read or have read.
+			progress - potentially forever, as I keep adding books I want to read or have read, videos I
+			found particularly interesting, etc. Being a DevOps engineer with an interest in MLOps,
+			resources tend to relate to those two areas.
 		</p>
 		<p>
 			Heavily inspired by
-			<a href="https://matt.might.net/articles/what-cs-majors-should-know/"
-				>What every computer science major should know</a
+			<BoopableLink
+				boopParams={{ isBooped: true, y: 3, timing: 150 }}
+				href="https://matt.might.net/articles/what-cs-majors-should-know/"
+				>What every computer science major should know</BoopableLink
 			>
+			Should I call it 'What every DevOps engineer should know'?
 		</p>
 	</div>
 </header>
