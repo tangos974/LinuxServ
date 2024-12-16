@@ -18,8 +18,7 @@
 	const info: TextPart[][] = [
 		[
 			{ text: 'DevOps Engineering M1 Student @ ' },
-			{ text: 'DataScientest', link: 'https://datascientest.com/', isLinked: true },
-			{ text: ', Graduating Summer 2025' }
+			{ text: 'DataScientest', link: 'https://datascientest.com/', isLinked: true }
 		],
 		[
 			{ text: 'DataOps Engineer @ ' },
@@ -55,10 +54,10 @@
 	<!-- Footer Section -->
 	<footer class="text-center mt-5">
 		<p>
-			This website is <BoopableLink
+			This website is a <BoopableLink
 				href="https://github.com/tangos974/LinuxServ"
 				boopParams={{ isBooped: true, y: 3, timing: 150 }}>fully open source</BoopableLink
-			> and was written in <BoopableLink
+			> WIP deployed on a k3s cluster. You're viewing the frontend that was written in <BoopableLink
 				href="https://svelte.dev/"
 				boopParams={{ isBooped: true, y: 3, timing: 150 }}>Svelte</BoopableLink
 			>.
