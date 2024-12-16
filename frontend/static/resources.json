@@ -138,5 +138,20 @@
 			"Another Video of the same guy going over networking basics. Start here if you're new to networking": "https://www.youtube.com/watch?v=kNKHM_isojI",
 			"Lewd Backronyms to remember the layers names": "https://www.reddit.com/r/networking/comments/2k9dcd/whats_your_best_techniquebackronym_for/"
 		}
+	},
+	{
+		"title": " TETRA Vulnerability (TETRA:BURST) YouTube Video",
+		"author": "Computerphile",
+		"link": "https://www.youtube.com/watch?v=Fy3Odm-dny0",
+		"Description": "A great video providing a High-level overview of the TETRA vulnerability",
+		"tags": ["security", "tetra", "video"],
+		"additional_resources": {
+			"Original Paper (On authors' site)": "https://www.midnightblue.nl/research/tetraburst",
+			"Defcon Slideshow by the finders of the Vuln (Midnight Blue Team": "https://www.youtube.com/watch?v=iGINoIYQwak",
+			"SDR++ (Cross-Platform Software Defined Radio) repo": "https://github.com/AlexandreRouma/SDRPlusPlus",
+			"SDR++ plugin for Tetra": "https://github.com/cropinghigh/sdrpp-tetra-demodulator",
+			"Live demonstration of the TETRA vulnerability (YouTube vid)": "https://www.youtube.com/watch?v=-m9UTJLt4uw",
+			"A homemade demonstration of the Vuln with entire updated source code might or might not appear here soon...": ""
+		}
 	}
 ]
