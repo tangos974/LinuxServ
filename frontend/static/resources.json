@@ -153,5 +153,32 @@
 			"Live demonstration of the TETRA vulnerability (YouTube vid)": "https://www.youtube.com/watch?v=-m9UTJLt4uw",
 			"A homemade demonstration of the Vuln with entire updated source code might or might not appear here soon...": ""
 		}
+	},
+	{
+		"title": "GCE instances picker grid, price calculator, etc.",
+		"author": "Nils Knieling a.k.a 'cyclenerd'",
+		"link": "https://gcloud-compute.com/",
+		"Description": "A nice little tool to help you find the right instance for your needs",
+		"tags": ["devops", "GCP", "website"]
+	},
+	{
+		"title": "PowerOff Google Cloud Billing",
+		"author": "Nils Knieling a.k.a 'cyclenerd'",
+		"link": "https://github.com/Cyclenerd/poweroff-google-cloud-cap-billing",
+		"Description": "Neat little Terraform module to power off Google Cloud Billing. See additional resources, but best used as fail-safe rather than a cost-control solution",
+		"tags": ["devops", "GCP", "terraform"],
+		"additional_resources": {
+			"This module is useful in two cases imo: 1) as a last resort in case of catastrophes (Then great), 2) for 'cost control' in the case of a small team where you've given your developpers full ownership of the project. In that case, this is actually not a good solution, because devs with full ownership and basic GCP knowledge will be able to turn off the billing. Upcoming article about this issue": ""
+		}
+	},
+	{
+		"title": "Don't Use Kubernetes, Yet",
+		"author": "Matt Rickard",
+		"link": "https://matt-rickard.com/dont-use-kubernetes-yet",
+		"Description": "I get it. We all start with a shine in our eyes and an image of our infra being a state-of-the art collection of k8s clusters with ArgoCD and full monitoring with a sexy Grafana dashboard. In the reality of a business environment, these tools take time (and thus, money) to set up, and are oftentimes overkill. This blogpost goes through each development step of a company's engineering team, explaining in depth why k8s adoption is or isn't a good idea. Worth a read, keeping in mind there are always a few exceptions",
+		"tags": ["devops", "kubernetes", "blogpost"],
+		"additional_resources": {
+			"A linkedin post I did on this topic": "https://www.linkedin.com/posts/t%C9%91nguy-fremont-96068214a_kubernetes-devops-startuplife-activity-7236704542082437124-HnNU?utm_source=share&utm_medium=member_desktop"
+		}
 	}
 ]
