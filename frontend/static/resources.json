@@ -8,42 +8,69 @@
 			"Test driven development - A no-BS guide by the Excellent Continuous Delivery YouTuber": "https://www.youtube.com/watch?v=ln4WnxX-wrw&t=96s",
 			"A series of conferences by the man himself": "https://www.youtube.com/watch?v=ln4WnxX-wrw&t=96s"
 		},
-		"tags": ["coding practices", "Java", "book"]
+		"tags": [
+			"coding practices",
+			"Java",
+			"book"
+		]
 	},
 	{
 		"title": "The Clean Coder",
 		"author": "Robert C. Martin",
 		"link": "https://blog.freec.asia/wp-content/uploads/2020/12/The-Clean-Coder.pdf",
 		"Description": "What is a good Dev, where does he fit in an organization? How should he organize his time at work? Here you'll find advice on stuff like the pomodoro technique, pair programming, and more",
-		"tags": ["organization", "soft skills", "book"]
+		"tags": [
+			"organization",
+			"soft skills",
+			"book"
+		]
 	},
 	{
 		"title": "The Phoenix Project",
 		"author": "Gene Kim, Kevin Behr, George Spafford",
 		"link": "https://theswissbay.ch/pdf/Books/Computer%20science/PhoenixProjectExcerpt.pdf",
 		"Description": "A book about the origins of Agile and DevOps and how it took inspiration from Lean in manufacturing. Not technical at all, but too important in the history of DevOps to be skipped",
-		"tags": ["organization", "history", "devops", "book"]
+		"tags": [
+			"organization",
+			"history",
+			"devops",
+			"book"
+		]
 	},
 	{
 		"title": "The DevOps Handbook",
 		"author": "Gene Kim, Jez Humble, Patrick Debois, John Willis",
 		"link": "/TheDevOpsHandbook.pdf",
 		"Description": "The practical follow-up to the Phoenix Project - Still not technical enough to go into actual DevOps tools",
-		"tags": ["organization", "history", "devops", "book"]
+		"tags": [
+			"organization",
+			"history",
+			"devops",
+			"book"
+		]
 	},
 	{
 		"title": "Accelerate",
 		"author": "Nicole Forsgren, Jez Humble, Gene Kim",
 		"link": "/Accelerate.pdf",
 		"Description": "Another foundational book about DevOps from a company organization perspective - like the DevOps Handbook but this one is based more on data issued from research",
-		"tags": ["organization", "devops", "book"]
+		"tags": [
+			"organization",
+			"devops",
+			"book"
+		]
 	},
 	{
 		"title": "Nand to Tetris",
 		"author": "H. G. Wells",
 		"link": "https://www.nand2tetris.org/",
 		"Description": "Ever wondered how ones and zeroes are put together to make a computer? This is the book that will answer all your questions",
-		"tags": ["computer architecture", "boolean logic", "assembly language", "book"],
+		"tags": [
+			"computer architecture",
+			"boolean logic",
+			"assembly language",
+			"book"
+		],
 		"additional_resources": {
 			"Free online pdf of the book 'Elements of computing systems'": "https://cmls-global.com/wp-content/uploads/2021/08/The-elements-of-computing-systems-building-a-modern-computer.pdf"
 		}
@@ -53,87 +80,132 @@
 		"author": "Ben Eater",
 		"link": "https://eater.net/8bit",
 		"Description": "This series of videos was particularly helpful to me when I was learning about computer architecture, but his entire website/YouTube channel is worth a visit",
-		"tags": ["computer architecture", "boolean logic", "assembly language", "video"]
+		"tags": [
+			"computer architecture",
+			"boolean logic",
+			"assembly language",
+			"video"
+		]
 	},
 	{
 		"title": "An unbiased evaluation of environment management and packaging tools",
 		"author": "Anna-Lena Popkes",
 		"link": "https://alpopkes.com/posts/python/packaging_tools/",
 		"Description": "The ultimate overview of tooling around the Python ecosystem",
-		"tags": ["python", "packaging tools", "blogpost"]
+		"tags": [
+			"python",
+			"packaging tools",
+			"blogpost"
+		]
+	},
+	{
+		"title": "Ten Python datetime pitfalls, and what libraries are (not) doing about it",
+		"author": "Arie Bovenberg",
+		"link": "https://dev.arie.bovenberg.net/blog/python-datetime-pitfalls/",
+		"Description": "A great article about the pitfalls of using datetime once past tutorial land in Python",
+		"tags": [
+			"python",
+			"datetime",
+			"blogpost"
+		]
 	},
 	{
 		"title": "Introduction to Machine Learning with Python",
 		"author": "Andreas C. Muller, Sarah Guido",
 		"link": "https://inprogrammer.com/wp-content/uploads/2023/02/Andreas-C.-Muller-Sarah-Guido-Introduction-to-Machine-Learning-with-Python_-A-Guide-for-Data-Scientists.pdf",
 		"Description": "A great, albeit a little outdated first dip into ML using scikit-learn",
-		"tags": ["python", "machine learning", "book"]
+		"tags": [
+			"python",
+			"machine learning",
+			"book"
+		]
 	},
 	{
-		"title": "PyTorch for Deep Learning & Machine Learning – Full Course",
+		"title": "PyTorch for Deep Learning & Machine Learning - Full Course",
 		"author": "freeCodeCamp.org",
 		"link": "https://www.youtube.com/watch?v=V_xro1bcAuA",
 		"Description": "How I learned PyTorch and made my first machine learning model. If you already know a little about Tensors, skip to the 6 hour mark",
-		"tags": ["python", "machine learning", "video"]
+		"tags": [
+			"python",
+			"machine learning",
+			"video"
+		]
 	},
 	{
 		"title": "Machine Learning with Pythorch and Scikit-Learn",
 		"author": "S. Raschka,Y. H. Liu & V. Mirjalili",
 		"link": "/Machine_Learning_with_PyTorch_and_Scikit-Learn.pdf",
 		"Description": "Not finished yet",
-		"tags": ["python", "machine learning", "book"]
+		"tags": [
+			"python",
+			"machine learning",
+			"book"
+		]
 	},
 	{
 		"title": "Learn Git Branching",
 		"author": "Peter Cottle",
 		"link": "https://learngitbranching.js.org/",
 		"Description": "A fun little game to learn about branching and merging",
-		"tags": ["git", "game"]
+		"tags": [
+			"git",
+			"game"
+		]
 	},
 	{
 		"title": "Tech Radars",
 		"author": "N/A",
 		"link": "https://www.cncf.io/reports/?_sft_lf-report-type=radar",
 		"Description": "These reports on what technology is being used in the cloud are invaluable for anyone working in DevOps or any field related to cloud computing. There are many so-called radars, most famous being the one regularily published by the CNCF, here's my personnal selection",
-		"tags": ["technology watch", "devops", "article"],
-		"additional_resources": {
-			"This one is more general than the CNCF": "https://cloud.theodo.com/en/tech-radar"
-		}
-	},
-	{
-		"title": "Prepare.sh for devops",
-		"author": "N/A",
-		"link": "https://prepare.sh/",
-		"Description": "A collection of real technical interview questions for DevOps roles. The website also has other IT engineering roles covered. You have to sign up, which I don't like, but (for now at least) it's still free",
-		"tags": ["interview prep", "devops", "website"]
+		"tags": [
+			"technology watch",
+			"devops",
+			"article"
+		]
 	},
 	{
 		"title": "DevOps Interview Helpers Videos",
 		"author": "Mamun Rashid",
 		"link": "https://www.youtube.com/playlist?list=PLRmSE-IsokP0U5VUCCUOsYPQ4OV2wCMtT",
 		"Description": "A senior SRE asks and answers every imaginable interview question. To the point yet exhaustive, there are no less than 200 videos in the playlist. A hidden gem of a YouTube channel",
-		"tags": ["interview prep", "devops", "video"]
+		"tags": [
+			"interview prep",
+			"devops",
+			"video"
+		]
 	},
 	{
 		"title": "roadmap.sh for devops",
 		"author": "N/A",
 		"link": "https://roadmap.sh/devops",
 		"Description": "A knowledge map of everything you need to be familiar with to call yourself a DevOps engineer. While the order and content of some items can be debatable, it is in my opinion THE best resource for newbies getting into the space",
-		"tags": ["learning", "devops", "website"]
+		"tags": [
+			"learning",
+			"devops",
+			"website"
+		]
 	},
 	{
 		"title": "How TCP really works // Three-way handshake // TCP/IP Deep Dive",
 		"author": "David Bombal",
 		"link": "https://www.youtube.com/watch?v=rmFX1V49K8U",
 		"Description": "A thorough deep dive into TCP and the three-way handshake using Wireshark",
-		"tags": ["networking", "tcp", "video"]
+		"tags": [
+			"networking",
+			"tcp",
+			"video"
+		]
 	},
 	{
 		"title": " OSI and TCP IP Models - Best Explanation",
 		"author": "N/A",
 		"link": "https://www.youtube.com/watch?v=3b_TAYtzuho",
 		"Description": "Title doesn't lie. The OSI model can be confusing, but this video makes it simple and easy to understand",
-		"tags": ["networking", "tcp", "video"],
+		"tags": [
+			"networking",
+			"tcp",
+			"video"
+		],
 		"additional_resources": {
 			"Another Video of the same guy going over networking basics. Start here if you're new to networking": "https://www.youtube.com/watch?v=kNKHM_isojI",
 			"Lewd Backronyms to remember the layers names": "https://www.reddit.com/r/networking/comments/2k9dcd/whats_your_best_techniquebackronym_for/"
@@ -144,7 +216,11 @@
 		"author": "Computerphile",
 		"link": "https://www.youtube.com/watch?v=Fy3Odm-dny0",
 		"Description": "A great video providing a High-level overview of the TETRA vulnerability",
-		"tags": ["security", "tetra", "video"],
+		"tags": [
+			"security",
+			"tetra",
+			"video"
+		],
 		"additional_resources": {
 			"Original Paper (On authors' site)": "https://www.midnightblue.nl/research/tetraburst",
 			"Defcon Slideshow by the finders of the Vuln (Midnight Blue Team": "https://www.youtube.com/watch?v=iGINoIYQwak",
@@ -159,14 +235,22 @@
 		"author": "Nils Knieling a.k.a 'cyclenerd'",
 		"link": "https://gcloud-compute.com/",
 		"Description": "A nice little tool to help you find the right instance for your needs",
-		"tags": ["devops", "GCP", "website"]
+		"tags": [
+			"devops",
+			"GCP",
+			"website"
+		]
 	},
 	{
 		"title": "PowerOff Google Cloud Billing",
 		"author": "Nils Knieling a.k.a 'cyclenerd'",
 		"link": "https://github.com/Cyclenerd/poweroff-google-cloud-cap-billing",
 		"Description": "Neat little Terraform module to power off Google Cloud Billing. See additional resources, but best used as fail-safe rather than a cost-control solution",
-		"tags": ["devops", "GCP", "terraform"],
+		"tags": [
+			"devops",
+			"GCP",
+			"terraform"
+		],
 		"additional_resources": {
 			"This module is useful in two cases imo: 1) as a last resort in case of catastrophes (Then great), 2) for 'cost control' in the case of a small team where you've given your developpers full ownership of the project. In that case, this is actually not a good solution, because devs with full ownership and basic GCP knowledge will be able to turn off the billing. Upcoming article about this issue": ""
 		}
@@ -176,7 +260,11 @@
 		"author": "Matt Rickard",
 		"link": "https://matt-rickard.com/dont-use-kubernetes-yet",
 		"Description": "I get it. We all start with a shine in our eyes and an image of our infra being a state-of-the art collection of k8s clusters with ArgoCD and full monitoring with a sexy Grafana dashboard. In the reality of a business environment, these tools take time (and thus, money) to set up, and are oftentimes overkill. This blogpost goes through each development step of a company's engineering team, explaining in depth why k8s adoption is or isn't a good idea. Worth a read, keeping in mind there are always a few exceptions",
-		"tags": ["devops", "kubernetes", "blogpost"],
+		"tags": [
+			"devops",
+			"kubernetes",
+			"blogpost"
+		],
 		"additional_resources": {
 			"A linkedin post I did on this topic": "https://www.linkedin.com/posts/t%C9%91nguy-fremont-96068214a_kubernetes-devops-startuplife-activity-7236704542082437124-HnNU?utm_source=share&utm_medium=member_desktop"
 		}
