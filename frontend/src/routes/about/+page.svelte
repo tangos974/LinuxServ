@@ -23,7 +23,11 @@
 		],
 		[
 			{ text: 'DevOps Engineering ' },
-			{ text: 'M1-level bootcamp', link: 'https://datascientest.com/formation-devops', isLinked: true },
+			{
+				text: 'M1-level bootcamp',
+				link: 'https://datascientest.com/formation-devops',
+				isLinked: true
+			},
 			{ text: ' graduate @ ' },
 			{ text: 'DataScientest', link: 'https://datascientest.com/', isLinked: true },
 			{ text: ' 2024' }
